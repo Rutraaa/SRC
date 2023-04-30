@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Гра з коробками</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Гра з коробками</h1>  
+    <div class="main-view">
+      <div id="game-rules" style="display: none;">
+        <h2>Правила гри:</h2>
+        <ol class="row">
+          <li>Клікайте на квадрати, щоб отримувати очки.</li>
+          <li>Кожен квадрат, на який ви клікаєте, зникає, і з'являється новий.</li>
+          <li>Ви маєте 10 секунд, щоб набрати якомога більше очок.</li>
+          <li>Найкращий результат зберігається в локальному сховищі браузера.</li>
+        </ol>
+      </div>  
+      <button class="row" id="start">Почати гру</button>
+      <button class="row" id="game-rules-button">Правила гри</button>
+      <label class="row" for="color-picker">Колір коробки:</label>
+      <input class="row" type="color" id="color-picker" value="#ff0000" />
+      <p class="row" id="score">Очки: 0</p>
+      <p class="row" id="high-score">Рекорд: 0</p>
+      <div class="row" id="timer">Час: 10</div>
+    </div>
+    <div id="gameboard"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
